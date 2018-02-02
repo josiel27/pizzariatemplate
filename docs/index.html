@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html>
+<title>Anattela</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"> 
+
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC"> 
+    
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"> 
+    
+ <link rel="stylesheet" href="css/francisCss.css" /> -->
+
+<link rel="stylesheet" href="cssLocal/css.css" />
+<link rel="stylesheet" href="cssLocal/css_002.css" />
+<link rel="stylesheet" href="cssLocal/css_003.css" />
+<link rel="stylesheet" href="cssLocal/font-awesome.css" />
+<link rel="stylesheet" href="cssLocal/francisCss.css" />
+<link rel="stylesheet" href="cssLocal/w3.css" />
+
+<!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">-->
+<body>
+
+<!-- Navbar -->
+<nav class="w3-top" style="z-index:2">
+    <div class=" w3-row">
+        <a class="w3-bar-item w3-button  w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" style="position: absolute;right: 0;"><i class="fa fa-bars"></i></a>
+                
+        <a href="#home" onclick="boderGreen(event);" class="w3-bar-item  ">
+            <div class="w3-col m3 tablinkg w3-border-green  w3-padding-large">Home</div>
+        </a>
+
+        <a href="#menu" onclick="boderGreen(event);" class="w3-bar-item w3-hide-small">
+            <div class="w3-col m3 tablinkg w3-hide-small  w3-padding-large">MENU</div>
+        </a>
+        
+        <a href="#novidades" onclick="boderGreen(event);" class="w3-bar-item w3-hide-small">
+            <div class="w3-col m3 tablinkg w3-hide-small  w3-padding-large">NOVIDADES</div>
+        </a>
+
+        
+        <a href="#contact" onclick="boderGreen(event);" class="w3-bar-item w3-hide-small">
+            <div class="w3-col m3 tablinkg w3-hide-small  w3-padding-large">CONTATO</div>
+        </a>
+    </div>
+</nav>
+
+<!-- Navbar on small screens -->
+<nav  id="navSmall" class="w3-bar-block  w3-hide w3-hide-large w3-hide-medium w3-top" onclick="this.style.display='none'">
+    <a href="#menu" class="w3-bar-item w3-button w3-padding-large">MENU</a>
+    <a href="#novidades" class="w3-bar-item w3-button w3-padding-large">NOVIDADES</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTATO</a>
+</nav>    
+    
+
+<!-- Header with image -->
+<header class="w3-display-container" id="home">
+    <div class="w3-display-bottomleft w3-padding" style="z-index: 1;">
+        <span class="w3-tag">
+            Aberto todos os dias 18:00 às 00:00 
+        </span>
+    </div>
+    <div class="w3-display-middle w3-center" style=" width: 100vw; z-index:1">
+        <span class="w3-text-white w3-hide-small">
+            <img src="img/logomarca/Logomarca.png" />
+            <h2 style="font-size: 2em;">A VERDADEIRA PIZZA</h2>
+            <span class="w3-tag" style="padding: 12px;font-size: 2em;border: 1px solid; background-color:#198143">Disk Pizza 3399-3501 / 3703-5838</span>
+        </span>
+        <span class="w3-text-white w3-hide-large w3-hide-medium">
+            <img src="img/logomarca/Logomarca.png" style="width: 100%;" />
+            <h2 style="font-size: 1em;">A VERDADEIRA PIZZA</h2>
+            <span class="w3-tag" style="padding: 12px;font-size: 1em;border: 1px solid;">Disk Pizza 3399-3501 / 3703-5838</span>
+        </span>
+        <p style='display:none'><a href="#cardapio" class="w3-button menuP">Deixe-me ver o menu</a></p>
+    </div>
+</header>
+
+<!-- cardápio -->
+<section class="w3-container w3-padding-32" id="cardapio">
+    <div class="w3-content">
+        <h2 class="w3-center" >CARDÁPIO</h2>
+        <p>Experimente nossas deliciosas Pizzas!</p>
+ 
+        <div class="w3-row-padding">
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-display-container essaaki">
+                    <div class="w3-display-topleft w3-red w3-padding"><p><b>Carbonara</b></p></div>
+                    <img id="imgPizza1"  class="cardapio" src="img/cardapio/hotdog-pizza.png" alt="House" style="width:100%">
+                    <footer class="w3-container footer">
+<!--                        <h5 class="cardapio">Footer</h5>-->
+                        <p>Molho, mussarela, calabresa, frango, bacon, catupiry, batata palha, milho e orégano</p>
+                    </footer>
+                </div>
+            </div>
+            <div class="w3-third w3-margin-bottom ">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-red w3-padding"><p><b>calabresa</b></p></div>
+                    <img id="imgPizza2" src="img/cardapio/calabresa.png" alt="House" style="width:100%;">
+                    <footer class="w3-container footer">
+<!--                        <h5 class="cardapio">Footer</h5>-->
+                        <p>Molho, mussarela, calabresa e orégano<br>&nbsp;</p>
+                    </footer>
+                </div>
+            </div>
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-red w3-padding"><p><b>marguerita</b></p></div>
+                    <img id="imgPizza3" src="img/cardapio/marguerita.png" alt="House" style="width:100%">
+                    <footer class="w3-container footer">
+<!--                        <h5 class="cardapio">Footer</h5>-->
+                        <p>Molho, mussarela, queijo, parmesão, manjericão, tomate, e orégano</p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--  menu  -->
+<section class="w3-container w3-padding-32" id="menu">
+    <div class="w3-content">
+        <h2 class="w3-center">O MENU</h2>
+        <p>O DIFÍCIL VAI SER ESCOLHER SÓ UM SABOR</p>
+        <div class="w3-row w3-center  w3-border-dark-grey" style="border-top-left-radius: 10px;border-top-right-radius: 10px;">
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+                <div class="w3-col s4 tablink w3-padding-large w3-hover-green" style="border-top-left-radius: 2px;">Tradicionais</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+                <div class="w3-col s4 tablink w3-padding-large w3-hover-green">Doces</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+                <div class="w3-col s4 tablink w3-padding-large w3-hover-green" style="border-top-right-radius: 2px;">Bebidas</div>
+            </a>
+        </div>
+        <div id="Pizza" class="w3-container menu  w3-white">
+            <div style="margin-top: 10px;">
+                <h4>
+                    <b>Anattela</b>
+    <!--                <span class="w3-right w3-tag w3-dark-grey w3-round">$12.50</span>-->
+                </h4>
+                <p class="w3-text-grey">Molho, mussarela, presunto, palmito, bacon, champignon, cebola e orégano</p>
+            </div>
+                <hr>
+            
+            <div>
+                <h4>
+                    <b>Du Chefe</b>
+                </h4>
+                <p class="w3-text-grey">molho, mussarela, frango, calabresa, bacon, tomate e orégano</p>
+            </div>
+                <hr>
+            
+            <div>
+                <h4>
+                    <b>Atum</b>
+                </h4>
+                <p class="w3-text-grey">molho, mussarela, atum, cebola, orégano e azeitona</p>
+            </div>
+                <hr>
+            
+            <div>
+                <h4>
+                    <b>Portuguesa</b> 
+                </h4>
+                <p class="w3-text-grey">Molho, mussarela, presunto, calabresa, ovo, pimentão, cebola, orégano e azeitona</p>
+            </div>
+                <hr>
+            
+            <div>
+                <h4>
+                    <b>Frango</b> 
+                    <span class="w3-tag w3-red w3-round">Hot!</span>
+                </h4>
+                <p class="w3-text-grey">Molho, mussarela, frango, catupiry e orégano</p>
+            </div>    
+                <hr>
+            
+            <div>
+                <h4>
+                    <b>Milho Verde</b> 
+                    <span class="w3-tag w3-grey w3-round">New</span>
+                </h4>
+                <p class="w3-text-grey">Molho, mussarela, milho verde e orégano</p>
+            </div>
+                <hr>
+            
+            <div>
+                <h4>
+                    <b>Brasileira</b> 
+                </h4>
+                <p class="w3-text-grey">Molho, mussarela, calabresa, tomate, catupiry e orégano</p>
+            </div>
+                <hr>
+            
+            <div>
+                <h4>
+                    <b>Vegetariana</b> 
+                </h4>
+                <p class="w3-text-grey">Molho, mussarela, champignon, pimentão, palmito, tomate, milho, ervilha, orégano e azeitona</p>
+            </div>
+                <hr>
+            <div>
+                <h4>
+                    <b>Bahiana</b> 
+                </h4>
+                <p class="w3-text-grey">Molho, mussarela, calabresa, pimenta, cebola, pimentão e orégano</p>
+            </div>
+                <hr>
+            <div>
+                <h4>
+                    <b>Brasiliense</b> 
+                </h4>
+                <p class="w3-text-grey">Molho, mussarela, atum, cebola, palmito, ervilha e orégano</p>
+            </div>
+                <hr>
+            <div>
+                <h4>
+                    <b>Alho e Óleo</b> 
+                </h4>
+                <p class="w3-text-grey">Molho, mussarela, alho, e orégano</p>
+            </div>
+                <hr>
+            <div>
+                <h4>
+                    <b>Toscana</b> 
+                </h4>
+                <p class="w3-text-grey">Molho, mussarela, calabresa, bacon, catupiry e orégano</p>
+            </div>
+                <hr>
+            <div>
+                <h4>
+                    <b>Bacon</b> 
+                </h4>
+                <p class="w3-text-grey">Molho, mussarela, bacon, tomate e orégano</p>
+            </div>
+                <hr>
+            <div>
+                <h4>
+                    <b>Calabresa</b> 
+                </h4>
+                <p class="w3-text-grey">Molho, mussarela, calabresa e orégano</p>
+            </div>
+                <hr>
+            <div>
+                <h4>
+                    <b>Marguerita</b> 
+                </h4>
+                <p class="w3-text-grey">Molho, mussarela, queijo, parmesão, manjericão, tomate e orégano</p>
+            </div>
+                <hr>
+            <div>
+                <h4>
+                    <b>Palmito</b> 
+                </h4>
+                <p class="w3-text-grey">Molho, mussarela, palmito e orégano</p>
+            </div>
+                <hr>
+            <div>
+                <h4>
+                    <b>Flora</b> 
+                </h4>
+                <p class="w3-text-grey">Molho, mussarela, presunto, atum, ovo, calabresa e orégano</p>
+            </div>
+                <hr>
+            <div>
+                <h4>
+                    <b>Mineirinha</b> 
+                </h4>
+                <p class="w3-text-grey">Molho, mussarela, frango, bacon, milho e orégano</p>
+            </div>
+                <hr>
+            <div>
+                <h4>
+                    <b>Lombinho</b> 
+                </h4>
+                <p class="w3-text-grey">Molho, mussarela, lombinho, cebola e orégano</p>
+            </div>
+                <hr>
+            <div>
+                <h4>
+                    <b>4 Queijos</b> 
+                </h4>
+                <p class="w3-text-grey">Molho, mussarela, provolone, catupiry, cheddar e orégano</p>
+            </div>
+                <hr>
+            <div>
+                <h4>
+                    <b>Carne de Sol</b> 
+                </h4>
+                <p class="w3-text-grey">Molho, mussarela, carne de Sol, tomate, cebola e orégano</p>
+            </div>
+                <hr>
+            <div>
+                <h4>
+                    <b>Napolitana</b> 
+                </h4>
+                <p class="w3-text-grey">Molho, mussarela, presunto, tomate, cebola e orégano</p>
+            </div>
+                <hr>
+            <div>
+                <h4>
+                    <b>Namorada</b> 
+                </h4>
+                <p class="w3-text-grey">Molho, mussarela, presunto, bacon, catupiry, palmito e orégano</p>
+            </div>
+                <hr>
+            <div>
+                <h4>
+                    <b>Moda Pizzaiolo</b> 
+                </h4>
+                <p class="w3-text-grey">Molho, mussarela, frango, creme de leite, milho e orégano</p>
+            </div>
+                <hr>
+            <div>
+                <h4>
+                    <b>Atum</b> 
+                </h4>
+                <p class="w3-text-grey">Molho, mussarela, atum, catupiry e orégano</p>
+            </div>
+                <hr>
+            <div>
+                <h4>
+                    <b>Caipira</b> 
+                </h4>
+                <p class="w3-text-grey">Molho, mussarela, frango, ovo, milho e orégano</p>
+            </div>
+                <hr>
+            <div>
+                <h4>
+                    <b>Havaiana</b> 
+                </h4>
+                <p class="w3-text-grey">Molho, mussarela, lombo, palmito, orégano e azeitona</p>
+            </div>
+                <hr>
+            <div>
+                <h4>
+                    <b>Carioca</b> 
+                </h4>
+                <p class="w3-text-grey">Molho, mussarela, bacon, catupiry e orégano</p>
+            </div>
+            <div>
+                <h4>
+                    <b>Mussarela</b> 
+                </h4>
+                <p class="w3-text-grey">Molho, mussarela, tomate e orégano</p>
+            </div>
+                <hr>
+            <div>
+                <h4>
+                    <b>Goiana</b> 
+                </h4>
+                <p class="w3-text-grey">Molho, mussarela, frango, milho orégano e azeitona</p>
+            </div>
+                <hr>
+            <div>
+                <h4>
+                    <b>Romana</b> 
+                </h4>
+                <p class="w3-text-grey">Molho, mussarela, frango, palmito, champignon, azeitona e orégano</p>
+            </div>
+                <hr>
+            <div>
+                <h4>
+                    <b>Carbonara</b> 
+                </h4>
+                <p class="w3-text-grey">Molho, mussarela, calabresa, frango, bacon, catupiry, batata palha, milho e orégano</p>
+            </div>
+                <hr>    
+            <div>
+                <h4>
+                    <b>Camarão</b>
+                    <span class="w3-tag w3-red w3-round">Pizza Especial</span>
+                </h4>
+                <p class="w3-text-grey">Molho, mussarela, camarão, ovo, cebola, palmito e orégano</p>
+            </div>
+                <hr>
+            <div>
+                <h4>
+                    <b>Bacalhau</b>
+                    <span class="w3-tag w3-red w3-round">Pizza Especial</span>
+                </h4>
+                <p class="w3-text-grey">Molho, mussarela, bacalhau, ovo, cebola, palmito e orégano e azeitona</p>
+            </div>
+                <hr>
+        </div>
+        
+        <!--   2 aba    -->
+        <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+            
+            <div>
+                    <h4>
+                        <b>Cocadinha</b>
+                    </h4>
+                    <p class="w3-text-grey">mussarela, coco ralado e leite condensado</p>
+                </div>
+                    <hr>
+                <div>
+                    <h4>
+                        <b>Pizza com sorvete</b>
+                    </h4>
+                    <p class="w3-text-grey">mussarela, sorvete e creme</p>
+                </div>
+                    <hr>
+            <h4>
+                <b>Lasagna</b> 
+                <span class="w3-tag w3-grey w3-round">Popular</span> 
+                <span class="w3-right w3-tag w3-dark-grey w3-round">$13.50</span>
+            </h4>
+            <p class="w3-text-grey">Special sauce, mozzarella, parmesan, ground beef</p>
+            <hr>
+            <h4>
+                <b>Ravioli</b> 
+                <span class="w3-right w3-tag w3-dark-grey w3-round">$14.50</span>
+            </h4>
+            <p class="w3-text-grey">Ravioli filled with cheese</p>
+            <hr>
+            <h4>
+                <b>Spaghetti Classica</b> 
+                <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span>
+            </h4>
+            <p class="w3-text-grey">Fresh tomatoes, onions, ground beef</p>
+            <hr>
+            <h4>
+                <b>Seafood pasta</b> 
+                <span class="w3-right w3-tag w3-dark-grey w3-round">$25.50</span>
+            </h4>
+            <p class="w3-text-grey">Salmon, shrimp, lobster, garlic</p>
+        </div>
+        <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+            <h4>
+                <b>Today's Soup</b> 
+                <span class="w3-tag w3-grey w3-round">Seasonal</span>
+                <span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span>
+            </h4>
+            <p class="w3-text-grey">Ask the waiter</p>
+            <hr>
+            <h4>
+                <b>Bruschetta</b> 
+                <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span>
+            </h4>
+            <p class="w3-text-grey">Bread with pesto, tomatoes, onion, garlic</p>
+            <hr>
+            <h4>
+                <b>Garlic bread</b> 
+                <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span>
+            </h4>
+            <p class="w3-text-grey">Grilled ciabatta, garlic butter, onions</p>
+            <hr>
+            <h4>
+                <b>Tomozzarella</b> 
+                <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span>
+            </h4>
+            <p class="w3-text-grey">Tomatoes and mozzarella</p>
+        </div>
+        <br>
+    </div>
+</section>
+
+
+<section id="pizzValue" class="w3-container w3-padding-32" style="background:#fff7dd;color:#ffa200;box-shadow: inset 1px 0px 8px rgba(0, 0, 0, 0.6);">
+    <div class="w3-content">
+        <div class="w3-row">
+            <div class="w3-col m4">
+                <h3>Pizzas Tradicionais e Doces</h3>
+                <p>Pizza Pequena R$ 16,99</p>
+                <p style="font-size:2em;">Pizza Média R$ 19,99</p>
+                <p style="font-size: 3em;white-space: nowrap;">Pizza Grande R$, 24,99</p>
+                
+                <h3>Borda recheadas Gratis</h3>
+                <p>Catupiry, Cheaddar, Doce de leite e chocolate <br>
+                    Adicional de Recheio R$: 2,00
+                </p>
+            </div>
+            
+            <div class="w3-col m4" style="text-align: right;">
+                <h3>Pizzas Especiais</h3>
+                <p>Pizza Pequena R$ 16,99</p>
+                <p>Pizza Média R$ 19,99 </p>
+                <p>Pizza Grande R$, 24,99</p>
+            </div>
+            
+            <div class="w3-col m4 pzz">
+                <img src="img/pizza-valor.png" style="width: 80%;" />
+                <div style="display: inline-flex;white-space: nowrap;"><p>Disk&nbsp;</p><p>&nbsp;3399-3501</p></div>
+                <div style="display: inline-flex;white-space: nowrap;"><p>Pizza&nbsp;</p><p>&nbsp;3703-5838</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+<!--  menu  -->
+<section class="w3-container w3-padding-64" id="novidades">
+    <div class="w3-content">
+        <h2 class="w3-center">NOVIDADES</h2>
+    </div>
+</section>
+
+<!-- novidades porções -->
+<section class="w3-container  w3-padding-64"  id="novidadesPorcao">
+    <div class="w3-row">
+     
+        <div class="w3-col m3">
+            <header class="w3-container w3-light-grey">
+                <h3 class="w3-center">Porções</h3>
+            </header>
+            <main class="w3-container">
+                <h4>Porção de Frios</h4>
+            </main>
+            <footer class="w3-container w3-light-grey">
+                <p>Carne de sol com Mandioca e Queijo</p>
+                <p>Calabresa Acebolada</p>
+                <p>Carne de Sol Completa com Mandioca e Queijo, Arooz Tropeiro</p>
+            </footer>
+        </div>
+        
+        <div class="w3-col m3">
+            <header class="w3-container w3-light-grey">
+                <h3 class="w3-center">Sobremesas</h3>
+            </header>
+            <main class="w3-container">
+                <h4>Porção de Frios</h4>
+            </main>
+            <footer class="w3-container w3-light-grey">
+                <p>Açai</p>
+                <p>Soverte</p>
+                <p>Banana split</p>
+            </footer>
+        </div>
+        
+        <div class="w3-col m3">
+            <header class="w3-container w3-light-grey">
+                <h3 class="w3-center">Combos</h3>
+            </header>
+            <main class="w3-container" >
+                <h4>Combo Plus com 4 Long Necks</h4>
+                <h4>Combo Top com 6 Long Necks</h4>
+            </main>
+            <footer class="w3-container w3-light-grey">
+                <p>Cervejas: Budweiser, Heineken ou Sol Acompanha Balde com gelo</p>
+                <p>Cervejas: Budweiser, Heineken ou Sol Acompanha Balde com gelo</p>
+            </footer>
+        </div>
+        
+        <div class="w3-col m3">
+            <header class="w3-container w3-light-grey">
+                <h3 class="w3-center">Sucos</h3>
+            </header>
+            <main class="w3-container" >
+                <h4>Sucos Natural</h4>
+            </main>
+            <footer class="w3-container w3-light-grey">
+                <p>Sucos Natural de Laranja</p>
+                <p>Sucos Natural com Polpa de Frutas e Cremes</p>
+            </footer>
+        </div>
+    </div>
+    
+    <br /> 
+
+
+<!--    <img src="img/sobremesaspng.png" style="width:100%" />-->
+</section>
+
+<!--  Contato  -->
+<section class="w3-container  w3-padding-32" id="contact" style="display:block">
+    <h2 class="w3-center ">CONTATO</h2>
+    <div class="w3-row-padding w3-content">
+        <div class="w3-col m4">
+            <div class=" w3-container">
+                <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i><b>RIACHO FUNDO I <br>QN 05 CONJ 17 LOTE 29 LOJA 01</b></p>
+                
+            </div>
+
+        </div>
+        <div class="w3-col m4">
+            <div class="w3-container" style="border: 1px solid red;border-radius: 5px;text-align: center;">
+                <p>Aceitamos Cartões Débito, Crédito e Refeição <br>Passamos Cartões em sua Residência</p>
+                <div id="cartoes">
+                    <img src="img/cartoes/visa.jpg" />
+                    <img src="img/cartoes/mastercard.jpg" />
+                    <img src="img/cartoes/redeshop.jpg" />
+                    <img src="img/cartoes/elo.jpg" />
+                </div>
+            </div>
+        </div>
+        <div class="w3-col m4 num">
+            <div><p>Disk&nbsp;</p><p>&nbsp;3399-3501</p></div>
+            <div><p>Pizza&nbsp;</p><p>&nbsp;3703-5838</p></div>
+        </div>
+    </div>
+    <p class="w3-center">"Tudo posso naquele que me fortalece"(FI 4:3)</p>
+</section>
+
+<style>
+    #cartoes {
+        text-align: center;
+        margin: 0px 0px 10px 0px;
+    }
+    .num { text-align: center }
+    .num p  {
+        font-family: "Impact", Charcoal, sans-serif !important;
+        font-size: 36px !important;
+        padding: 0;
+        margin: 0;
+        color: #ffa200;
+        font-weight: bold;
+        display: inline-flex;
+    }
+</style>    
+    
+<!-- Footer -->
+<footer class="w3-center w3-padding-32 footer">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p style="font-size:12px;">Powered by <a href="http://francisleal.esy.es/" title="francis.leal" target="_blank" class="w3-hover-opacity">&copy;Francis.leal</a></p>
+</footer>
+<script>
+ function myFunction() {
+    var x = document.getElementById("navSmall");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-green", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-green";
+}
+document.getElementById("myLink").click();
+
+function boderGreen(evt) {
+  var  tablinksg;
+  
+  tablinksg = document.getElementsByClassName("tablinkg");
+  for (var i = 0; i < tablinksg.length; i++) {
+     tablinksg[i].className = tablinksg[i].className.replace(" w3-border-green", "");
+  }
+  evt.currentTarget.firstElementChild.className += " w3-border-green";
+}
+
+
+(function(){
+    var x = document.getElementById("imgPizza1");
+    x.addEventListener("mouseover", mouseover);
+    x.addEventListener("mouseout", ouseout);
+    
+    function mouseover() {
+        var x = document.getElementsByClassName("w3-display-topleft");
+        x[0].style.width = '100%';
+        x[0].style.borderTopRightRadius = '2px';
+    }
+
+    function ouseout() {
+        var x = document.getElementsByClassName("w3-display-topleft");
+        x[0].style.width = '50%';
+        x[0].style.borderTopRightRadius = '0px';
+    }
+})();
+
+
+(function(){
+var x = document.getElementById("imgPizza2");
+x.addEventListener("mouseover", mouseover);
+x.addEventListener("mouseout", ouseout);
+    
+function mouseover() { 
+    document.getElementsByClassName("w3-display-topleft")[1].style.width = '100%';
+    document.getElementsByClassName("w3-display-topleft")[1].style.borderTopRightRadius = '2px';
+}
+
+function ouseout() {
+    document.getElementsByClassName("w3-display-topleft")[1].style.width = '50%';
+    document.getElementsByClassName("w3-display-topleft")[1].style.borderTopRightRadius = '0px';
+}
+})();
+
+(function(){
+    var x = document.getElementById("imgPizza3");
+    x.addEventListener("mouseover", mouseover);
+    x.addEventListener("mouseout", ouseout);
+    
+    function mouseover() {
+        var x = document.getElementsByClassName("w3-display-topleft");
+        x[2].style.width = '100%';
+        x[2].style.borderTopRightRadius = '2px';
+    }
+
+    function ouseout() {
+        var x = document.getElementsByClassName("w3-display-topleft");
+        x[2].style.width = '50%';
+        x[2].style.borderTopRightRadius = '0px';
+    }
+})();
+
+</script>
+</body>
+</html>
+
+
+

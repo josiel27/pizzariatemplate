@@ -1,0 +1,508 @@
+/**********{ version 20-06 }***********/
+body, html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 1em !important;
+    
+}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif !important;}
+.menu {display: none}
+
+/***********{ heade }*************/
+
+.w3-badge, .w3-tag { 
+    background: #009a49;
+}
+
+nav {
+    background: #f44336;
+    margin: 0 auto;
+    text-align: center;
+    transition: all 0.2s ease 0s;
+    font-family: "Amatic SC", sans-serif !important;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #fff;
+    display: table;
+}
+
+nav > div > a > div {
+    transition: all 0.3s ease 0s;
+    border-bottom: 6px solid #6a773b;
+    padding: 3px
+}
+
+/*nav:hover { background: rgba(0, 0, 0, 0.7); }*/
+
+
+#navSmall {
+    margin-top: 66px;
+    z-index: 2;
+    width: 100vw;
+}
+
+#navSmall > a {
+    text-align: center;
+}
+
+header#home {
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100%;
+    
+    -webkit-animation-name: carrossel;
+    -moz-animation-name: carrossel;
+    -o-animation-name: carrossel;
+    animation-name: carrossel;
+    
+    -webkit-animation-duration: 20s;
+    -moz-animation-duration: 20s;
+    -o-animation-duration: 20s;
+    animation-duration: 20s;
+        
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    background-image: url("../img/background/Pizza-fundo3.jpg");
+}
+
+@keyframes carrossel {
+      0% {background-image: url(../img/background/Pizza-fundo1.jpg)}
+     50% {background-image: url(../img/background/Pizza-fundo2.jpg)}
+    100% {background-image: url(../img/background/Pizza-fundo3.jpg)}    
+}
+
+header#home:after {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 0;
+}
+
+header#home > div + div > span > h1 {
+    text-align:center;
+    letter-spacing:0.1em;
+    position: relative;
+    z-index: 1;
+    font-family:impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif !important;
+    height: 70px;
+    display: inline-block;
+}
+
+header#home > div + div > span > h1 > img {
+    margin-bottom: 20px;
+}
+
+header#home > div + div > span > h1 + h2 {
+    font-size: 4em;
+}
+
+header#home > div + div > span + span + p > a  {
+    color: #fff !important;
+    border: 2px solid #fff !important;
+    font-weight: bold;
+    font-size: 2em !important;
+    transition: all 0.2s ease 0s;
+}
+a.menuP:hover {
+    background: #f44336 !important;
+    color: #fff !important;
+
+}
+p {
+    font-family: "Raleway", sans-serif !important;
+    font-size: 16px;
+}
+
+/***********{ cardápio }*************/
+#cardapio { 
+/*    min-height: 100%;*/
+}
+
+#cardapio > div > h2 +p + div > div > div {
+border-radius: 2px;
+    box-shadow: 1px 0px 8px rgba(0, 0, 0, 0.6);
+}
+
+#cardapio > div > h2 +p + div > div > div > div {
+    border-top-left-radius: 2px;
+}
+
+#cardapio > div > h2 +p + div > div > div footer {
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+
+#cardapio > div > div > div > div > img {
+/*     -webkit-transition: width 0.5s;
+    -moz-transition: width 0.5s;
+    -o-transition: width 0.5s;
+    transition: width 0.5s; */
+    
+-webkit-transition: all 300ms ease;
+-moz-transition: all 300ms ease;
+-ms-transition: all 300ms ease;
+-o-transition: all 300ms ease;
+transition: all 300ms ease;
+
+}
+
+#cardapio > div > div > div > div > img:hover {
+/*     position: relative;
+    z-index: 1;
+    width: 110% !important; */
+-moz-transform: scale(1.3) rotate(4deg);
+-webkit-transform: scale(1.3) rotate(4deg);
+-o-transform: scale(1.3) rotate(4deg);
+-ms-transform: scale(1.3) rotate(4deg);
+transform: scale(1.3) rotate(4deg);
+
+}
+
+#cardapio > div.w3-content > h1 + p+ div.w3-row-padding,
+#cardapio > div.w3-content > h1 + p+ div.w3-row-padding + div.w3-row-padding {
+    min-height: 412px;
+}
+
+#cardapio > div > h2{
+    color: yellow;
+    text-shadow: 1px 1px 2px darkorange;
+    font-size: 4em;
+}
+
+#cardapio > div > h2 + p {
+    text-align: center;
+    color: darkorange;
+    font-size: 3em;
+    margin-top: 0px;
+    font-family: "Amatic SC", sans-serif !important;
+    font-weight: bold;
+}
+
+h5.cardapio  {
+    color: #fff;
+}
+
+/***********{ Pizza }*************/
+
+#Pizza {
+
+}
+
+#Pizza > div {
+    padding: 2px;
+    border-radius: 2px;
+}
+#Pizza > hr {
+    margin: 10px 0;
+}
+
+#Pizza > div p {
+    margin: 0
+}
+
+#Pizza > div h4 {
+    margin: 0;
+    padding: 0;
+}
+
+
+#Pizza > div:hover {
+    transition: box-shadow .25s;
+    box-shadow: 0 0px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#Pizza > div > h4 {
+    color: #757575 !important;
+}
+
+
+.w3-display-topleft {
+    width: 50%;
+    -webkit-transition: width 0.5s; /* Safari */
+    transition: width 0.5s;
+}
+
+
+/***********{ menu }*************/
+#menu {
+    background-image: url("../img/background/Pizza-fundo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+#menu:after {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#menu > div > h2 {
+    color: yellow;
+    text-shadow: 1px 1px 1px darkorange;
+    font-size: 4em;
+}
+
+#menu > div > h2 + p {
+    text-align: center;
+    color: darkorange;
+    font-size: 3em;
+    margin-top: 0px;
+    font-family: "Amatic SC", sans-serif !important;
+    font-weight: bold;
+    text-shadow: 0px 0px 10px #fff;
+}
+
+#menu > div > h2 + p + div > a > div {
+    font-size: 2em;
+    background: rgba(255, 255, 255, 0.3);
+    transition: all 0.2s ease 0s;
+}
+
+/***********{ novidades }*************/
+#novidades {
+    background-image: url("../img/background/Pizza-fundo2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+/*    min-height: 100%;*/
+    position: relative;
+    z-index: 1;
+}
+#novidades:after {
+display: block;
+content: '';
+position: absolute;
+height: 100%;
+width: 100%;
+background: rgba(255, 255, 255, 0.6);
+z-index: -1;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+}
+
+#novidades > div > h2 {
+    color: #fff;
+    text-shadow: 1px -3px 10px black;
+    font-size: 4em;
+    background: linear-gradient(#db312c,#587b3e);
+    border-radius: 50%;
+    border: 15px solid #4caf50;
+    width: 550px;
+    margin: 0 auto;
+}
+
+#novidades > div > h2 + p {
+    text-align: center;
+    color: darkorange;
+    font-size: 3em;
+    margin-top: 0px;
+    font-family: "Amatic SC", sans-serif !important;
+    font-weight: bold;
+    /*! text-shadow: 0px 0px 10px #fff; */
+}
+
+#novidades > div > h2 + p + div > a > div {
+    font-size: 2em;
+    background: rgba(255, 255, 255, 0.3);
+    transition: all 0.2s ease 0s;
+}
+
+#novidadesPorcao > div > div:nth-of-type(1) { background-image: url(../img/novidades/porcao.png); }
+#novidadesPorcao > div > div:nth-of-type(2) { background-image: url(../img/novidades/sobremesa.png); }
+#novidadesPorcao > div > div:nth-of-type(3) { background-image: url(../img/novidades/heineken.jpg); }
+#novidadesPorcao > div > div:nth-of-type(4) { background-image: url(../img/novidades/suco.png);}
+#novidadesPorcao > div > div {
+    
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+#novidadesPorcao > div > div:hover:nth-of-type(1),
+#novidadesPorcao > div > div:hover:nth-of-type(2),
+#novidadesPorcao > div > div:hover:nth-of-type(3),
+#novidadesPorcao > div > div:hover:nth-of-type(4) {
+    -moz-transform: scale(1.1) rotate(4deg);
+    -webkit-transform: scale(1.1) rotate(4deg);
+    -o-transform: scale(1.1) rotate(4deg);
+    -ms-transform: scale(1.1) rotate(4deg);
+    transform: scale(1.1) rotate(4deg);
+    
+}
+
+
+#novidadesPorcao main {
+    height: 230px;
+    background-size: cover;
+    font-family: "Amatic SC", sans-serif !important;    
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+#novidadesPorcao main h4 {
+    
+    font-family: "Amatic SC", sans-serif !important;
+    font-size: 2em;
+    font-weight: bold;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    margin: 0;
+    top: 33%;
+    position: relative;
+}
+
+#novidadesPorcao  footer {
+    background: #f1f1f1 ;
+    height: 175px;
+    color: #935d00 !important;
+}
+
+
+/***********{ footer }*************/
+footer.footer {
+    background: url(../img/footer.png);
+    color: #ffa200;
+    font-size: 1.5em;
+}
+
+footer.footer i {
+    cursor: pointer;
+}
+
+footer > p {
+    color: ;
+    font-size: 1em;
+}
+
+/***********{ contato }**************/
+
+.pzz p {
+    font-family: "Impact", Charcoal, sans-serif !important;
+    font-size: 60px;
+    padding: 0;
+    margin: 0;
+    color: #ffa200;
+}
+#contact {
+    background: #fafafa;
+}
+
+#contact h2 {
+
+}
+
+#contact i { 
+    color: #f44336 !important
+}
+
+
+
+.w3-content {
+    max-width: 80% !important;
+}
+
+#pizzValue > div >div > div > h3 {
+    margin: 5px;
+    font-family: "Impact", Charcoal, sans-serif !important;
+    font-weight: normal;
+} 
+
+
+#pizzValue > div >div > div > p {
+    margin: 5px;
+    color: #935d00;
+}
+
+@media only screen and (max-width: 600px) {
+    #cardapio > div > h2 {
+        font-size: 3em;
+    }
+    #cardapio > div > h2 + p {
+        font-size: 2em;
+    }
+    #menu > div > h2 {
+        font-size: 3em;
+    }
+    #menu > div > h2 + p {
+        font-size: 2em;
+    }
+    #menu > div > h2 + p + div > a > div {
+        font-size: 1em;
+    }
+    .w3-padding-large { padding: 12px 0px !important; }
+    #pizzValue > div > div > div > p {
+        font-size: 1em !important;
+    }
+    .pzz p {
+        font-size: 2em;
+    }
+    #novidades > div > h2 {
+        font-size: 2em;
+        border: 10px solid #4caf50;
+        width: 100%;
+    }
+    .w3-content {
+        max-width: 100% !important;
+    }
+}
+
+
+/* xpg remove site não comercial apenas para exemplo */
+center { display: none !important }
+#barrauol { display: none !important }
+.barra-xpg { display: none !important }
+
+/*#fcb813*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
