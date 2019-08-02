@@ -1,0 +1,86 @@
+#hamburguer {
+  background-image: url("../img/background/hamburgueres.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+#hamburguer:after {
+  display: block;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#hamburguer > div > h2 {
+  color: yellow;
+  text-shadow: 1px 1px 1px darkorange;
+  font-size: 4em;
+}
+
+#hamburguer > div > h2 + p {
+  text-align: center;
+  color: darkorange;
+  font-size: 3em;
+  margin-top: 0px;
+  font-family: "Amatic SC", sans-serif !important;
+  font-weight: bold;
+  text-shadow: 0px 0px 10px #fff;
+}
+
+.title-hamb {
+  background: white;
+  font-size: 15px;
+}
+.text-hamb {
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  /* text-align: center; */
+  padding-left: 40px;
+  font-weight: bold;
+}
+
+.border-radius {
+  /* border: 3px solid; */
+  border-radius: 10px;
+}
+
+.title-color-1 {
+  background: #edb923;
+}
+.title-color-2 {
+  background: #f58220;
+}
+.title-color-3 {
+  background: #ee1d23;
+}
+.title-color-4 {
+  background: #00a54f;
+}
+
+#hamburguer > div > #title-hamb > div > div > h4 {
+  /* alteração nas margens dos hamb  */
+  margin: 2px 0 !important;
+}
+
+#hamburguer > div > #title-hamb > div > div > p {
+  /* alteração nas margens dos hamb  */
+  margin: 2px 0 !important;
+}
+
+#hamburguer > div > #title-hamb > div > hr {
+  /* alteração nas margens das pizzas e desc no menu */
+  margin: 5px 0;
+}
