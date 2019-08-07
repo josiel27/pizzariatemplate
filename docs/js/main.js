@@ -3,16 +3,23 @@ function hideTab(tab) {
   switch (tab) {
     case "1":
       document.getElementById("tab-hamb-1").style.display = "none";
-      document.getElementById("tab-hamb-1").style.display = "none";
+      document.getElementById("icon-1-off").style.display = "none";
+      document.getElementById("icon-1-on").style.display = "block";
       break;
     case "2":
       document.getElementById("tab-hamb-2").style.display = "none";
+      document.getElementById("icon-2-off").style.display = "none";
+      document.getElementById("icon-2-on").style.display = "block";
       break;
     case "3":
       document.getElementById("tab-hamb-3").style.display = "none";
+      document.getElementById("icon-3-off").style.display = "none";
+      document.getElementById("icon-3-on").style.display = "block";
       break;
     case "4":
       document.getElementById("tab-hamb-4").style.display = "none";
+      document.getElementById("icon-4-off").style.display = "none";
+      document.getElementById("icon-4-on").style.display = "block";
       break;
   }
 }
@@ -21,15 +28,23 @@ function showTab(tab) {
   switch (tab) {
     case "1":
       document.getElementById("tab-hamb-1").style.display = "block";
+      document.getElementById("icon-1-off").style.display = "block";
+      document.getElementById("icon-1-on").style.display = "none";
       break;
     case "2":
       document.getElementById("tab-hamb-2").style.display = "block";
+      document.getElementById("icon-2-off").style.display = "block";
+      document.getElementById("icon-2-on").style.display = "none";
       break;
     case "3":
       document.getElementById("tab-hamb-3").style.display = "block";
+      document.getElementById("icon-3-off").style.display = "block";
+      document.getElementById("icon-3-on").style.display = "none";
       break;
     case "4":
       document.getElementById("tab-hamb-4").style.display = "block";
+      document.getElementById("icon-4-off").style.display = "block";
+      document.getElementById("icon-4-on").style.display = "none";
       break;
   }
 }
