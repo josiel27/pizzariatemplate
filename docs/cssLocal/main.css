@@ -18,6 +18,15 @@ h6 {
   display: none;
 }
 
+.seletor-mouse-none{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 /***********{ heade }*************/
 
 .w3-badge,
@@ -42,6 +51,15 @@ nav > div > a > div {
   border-bottom: 6px solid #6a773b;
   padding: 3px;
 }
+
+.float-right {
+  float: right;
+}
+
+.font-size-16{
+  font-size: 16px;
+}
+
 
 /*nav:hover { background: rgba(0, 0, 0, 0.7); }*/
 
@@ -341,6 +359,7 @@ h5.cardapio {
   position: relative;
   z-index: 1;
 }
+
 #novidades:after {
   display: block;
   content: "";
