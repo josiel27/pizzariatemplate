@@ -89,3 +89,9 @@ function boderGreen(evt) {
   }
   evt.currentTarget.firstElementChild.className += " w3-border-green";
 }
+
+
+function hideMenu(){
+  document.getElementById('navSmall').classList.remove("w3-show");
+  console.log('asjdios')
+}

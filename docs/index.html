@@ -50,7 +50,7 @@
             <a href="#contact" onclick="boderGreen(event);" class="w3-bar-item w3-hide-small">
                 <div class="w3-col m2 tablinkg w3-hide-small  w3-padding-large">CONTATO</div>
             </a>
-            
+
             <a href="#contact" onclick="boderGreen(event);" class="w3-bar-item w3-hide-small">
                 <div class="w3-col m2 tablinkg w3-hide-small  w3-padding-large">CONTATO</div>
             </a>
@@ -58,15 +58,14 @@
     </nav>
 
     <!-- Navbar on small screens -->
-    <nav id="navSmall" class="w3-bar-block  w3-hide w3-hide-large w3-hide-medium w3-top"
-        onclick="this.style.display='none'">
+    <nav id="navSmall" class="w3-bar-block  w3-hide w3-hide-large w3-hide-medium w3-top" onclick="hideMenu()">
         <a href="./pizzas.html" class="w3-bar-item w3-button w3-padding-large">PIZZAS</a>
         <a href="./hamburgueres.html" class="w3-bar-item w3-button w3-padding-large">HAMBÚRGUERES</a>
         <a href="#novidades" class="w3-bar-item w3-button w3-padding-large">NOVIDADES</a>
         <a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTATO</a>
     </nav>
 
-    
+
     <!-- Header with image -->
     <header class="w3-display-container" id="home">
         <div class="w3-display-bottomleft w3-padding" style="z-index: 1;">
@@ -92,16 +91,89 @@
         </div>
     </header>
 
-    <!-- cardápio -->
+    <!-- PIZZAS AMOSTRAS -->
     <section class="w3-container w3-padding-32" id="cardapio">
         <div class="w3-content">
-            <h2 class="w3-center">CARDÁPIO</h2>
+            <h2 class="w3-center">Pizzas</h2>
             <p>Experimente nossas deliciosas Pizzas!</p>
 
             <div class="w3-row-padding">
                 <div class="w3-third w3-margin-bottom">
                     <div class="w3-display-container essaaki">
-                        <div class="w3-display-topleft w3-red w3-padding">
+                        <div class="w3-display-topleft color-theme w3-padding">
+                            <p><b>Segunda </b></p>
+                        </div>
+                        <img id="imgPizza1" class="cardapio" src="img/cardapio/hotdog-pizza.png" alt="House"
+                            style="width:100%">
+                        <footer class="w3-container footer">
+                            <h5 class="cardapio">Carbonara</h5>
+                            <p>Molho, mussarela, frango, bacon, catupiry, batata palha, milho e orégano.</p>
+                        </footer>
+                    </div>
+                </div>
+                <div class="w3-third w3-margin-bottom ">
+                    <div class="w3-display-container">
+                        <div class="w3-display-topleft color-theme w3-padding">
+                            <p><b>Terça</b></p>
+                        </div>
+                        <img id="imgPizza2" src="img/cardapio/calabresa.png" alt="House" style="width:100%;">
+                        <footer class="w3-container footer">
+                            <h5 class="cardapio">Calabresa</h5>
+                            <p>Molho, mussarela, calabresa e orégano.<br>&nbsp;</p>
+                        </footer>
+                    </div>
+                </div>
+                <div class="w3-third w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <div class="w3-display-topleft color-theme w3-padding">
+                            <p><b>Quarta</b></p>
+                        </div>
+                        <img id="imgPizza3" src="img/cardapio/marguerita.png" alt="House" style="width:100%">
+                        <footer class="w3-container footer">
+                            <h5 class="cardapio">Marguerita</h5>
+                            <p>Molho, mussarela, queijo parmesão, manjericão, tomate e orégano.</p>
+                        </footer>
+                    </div>
+                </div>
+                <div class="w3-third w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <div class="w3-display-topleft color-theme w3-padding">
+                            <p><b>Quinta</b></p>
+                        </div>
+                        <img id="imgPizza3" src="img/cardapio/marguerita.png" alt="House" style="width:100%">
+                        <footer class="w3-container footer">
+                            <h5 class="cardapio">Marguerita</h5>
+                            <p>Molho, mussarela, queijo parmesão, manjericão, tomate e orégano.</p>
+                        </footer>
+                    </div>
+                </div>
+                <div class="w3-third w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <div class="w3-display-topleft color-theme w3-padding">
+                            <p><b>Sexta</b></p>
+                        </div>
+                        <img id="imgPizza3" src="img/cardapio/marguerita.png" alt="House" style="width:100%">
+                        <footer class="w3-container footer">
+                            <h5 class="cardapio">Marguerita</h5>
+                            <p>Molho, mussarela, queijo parmesão, manjericão, tomate e orégano.</p>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- HAMBURGUERES COMBOS -->
+    <section class="w3-container w3-padding-32" id="cardapio">
+        <div class="w3-content">
+            <h2 class="w3-center">Hambúrgueres</h2>
+            <p>Experimente nossas deliciosos trios!</p>
+
+            <div class="w3-row-padding">
+                <div class="w3-third w3-margin-bottom">
+                    <div class="w3-display-container essaaki">
+                        <div class="w3-display-topleft color-theme w3-padding">
                             <p><b>Carbonara</b></p>
                         </div>
                         <img id="imgPizza1" class="cardapio" src="img/cardapio/hotdog-pizza.png" alt="House"
@@ -114,7 +186,7 @@
                 </div>
                 <div class="w3-third w3-margin-bottom ">
                     <div class="w3-display-container">
-                        <div class="w3-display-topleft w3-red w3-padding">
+                        <div class="w3-display-topleft color-theme w3-padding">
                             <p><b>Calabresa</b></p>
                         </div>
                         <img id="imgPizza2" src="img/cardapio/calabresa.png" alt="House" style="width:100%;">
@@ -126,7 +198,7 @@
                 </div>
                 <div class="w3-third w3-margin-bottom">
                     <div class="w3-display-container">
-                        <div class="w3-display-topleft w3-red w3-padding">
+                        <div class="w3-display-topleft color-theme w3-padding">
                             <p><b>Marguerita</b></p>
                         </div>
                         <img id="imgPizza3" src="img/cardapio/marguerita.png" alt="House" style="width:100%">
@@ -140,6 +212,7 @@
         </div>
     </section>
 
+    <!-- VALORES -->
     <section id="pizzValue" class="w3-container w3-padding-32"
         style="background:#fff7dd;color:#ffa200;box-shadow: inset 1px 0px 8px rgba(0, 0, 0, 0.6);">
         <div class="w3-content">
