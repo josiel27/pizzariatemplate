@@ -262,9 +262,24 @@ h5.cardapio {
 }
 
 .w3-display-topleft {
-  width: 50%;
+  width: 30%;
   -webkit-transition: width 0.5s; /* Safari */
   transition: width 0.5s;
+}
+
+.button-pizza {
+  margin-left: 15px;
+  padding-left: 40px;
+  z-index: 0;
+  background: #ffa2009c;
+}
+
+#img-button-pizza {
+  position: absolute;
+  width: 2.5vw;
+  z-index: 1;
+  /* top: auto; */
+  margin-top: -3px;
 }
 
 /***********{ menu }*************/
