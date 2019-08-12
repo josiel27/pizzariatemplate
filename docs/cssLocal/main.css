@@ -510,10 +510,10 @@ footer > p {
 
 @media only screen and (max-width: 600px) {
   #cardapio > div > h2 {
-    font-size: 3em;
+    font-size: 2em;
   }
   #cardapio > div > h2 + p {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   #menu > div > h2 {
     font-size: 3em;
