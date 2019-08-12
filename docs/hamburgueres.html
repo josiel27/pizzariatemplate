@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<title>Anattela Pizzaria</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="shortcut icon" href="img/favicon.png" />
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+<link rel="stylesheet" href="css/font_face.css" />
+<link rel="stylesheet" href="css/font-awesome.css" />
+<link rel="stylesheet" href="css/main.css" />
+<link rel="stylesheet" href="css/w3.css" />
+<link rel="stylesheet" href="css/css_hamburgueres.css" />
+
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="w3-top" style="z-index:2">
+        <div class=" w3-row">
+            <a class="w3-bar-item w3-button  w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)"
+                onclick="showMenu()" style="position: absolute;right: 0;"><i class="fa fa-bars"></i></a>
+
+
+            <a href="index.html" onclick="boderGreen(event);" class="w3-bar-item">
+                <div class="w3-col m2 tablinkg w3-border-green display-flex align-items-center">
+                    <img class="img-logo-nav" src="img/logoatt.png" />
+                    <!-- HOME -->
+                </div>
+            </a>
+
+            <a href="#menu" onclick="boderGreen(event);" class="w3-bar-item w3-hide-small">
+                <div class="w3-col m2 tablinkg w3-hide-small  w3-padding-large">PIZZAS</div>
+            </a>
+
+            <a href="#hamburgueres" onclick="boderGreen(event);" class="w3-bar-item w3-hide-small">
+                <div class="w3-col m2 tablinkg w3-hide-small  w3-padding-large">HAMBÚRGUERES</div>
+            </a>
+
+            <a href="#novidades" onclick="boderGreen(event);" class="w3-bar-item w3-hide-small">
+                <div class="w3-col m2 tablinkg w3-hide-small  w3-padding-large">Novidades</div>
+            </a>
+
+            <a href="#contact" onclick="boderGreen(event);" class="w3-bar-item w3-hide-small">
+                <div class="w3-col m2 tablinkg w3-hide-small  w3-padding-large">CONTATO</div>
+            </a>
+
+            <a href="#contact" onclick="boderGreen(event);" class="w3-bar-item w3-hide-small">
+                <div class="w3-col m2 tablinkg w3-hide-small  w3-padding-large">CONTATO</div>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Navbar on small screens -->
+    <nav id="navSmall" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-top"
+        onclick="this.style.display='none'">
+        <a href="#menu" class="w3-bar-item w3-button w3-padding-large">PIZZAS</a>
+        <a href="#hamb" class="w3-bar-item w3-button w3-padding-large">HAMBÚRGUERES</a>
+        <a href="#novidades" class="w3-bar-item w3-button w3-padding-large">NOVIDADES</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTATO</a>
+    </nav>
+
+    <!--  SECTION INICIO  -->
+    <section class="" id="inicio"></section>
+
+    <!--  HAMBUGERES  -->
+    <section class="w3-container w3-padding-32" id="hamburguer">
+        <div class="w3-content">
+            <h2 class="w3-center title-hamb-princ">HAMBÚRGUERES</h2>
+            <p>Mate quem te mata!</p>
+            <!-- TITLE HAMBUGERE 1 -->
+            <div id="title-hamb" class="w3-container title-hamb seletor-mouse-none ">
+                <p class="text-hamb border-radius title-color-1">SANDUÍCHES DE HAMBÚRGUER DE CARNE
+                    <a class="font-size-16 float-right align-items-center display-flex hover-icon" id="icon-1-off"
+                        onclick="hideTab('1')">
+                        Esconder <i class="fa fa-arrow-circle-down fa-fw w3-margin-right icon-tab"> </i>
+                    </a>
+                    <a class="font-size-16 float-right align-items-center display-none hover-icon" id="icon-1-on"
+                        onclick="showTab('1')">
+                        Mostrar <i class="fa fa-arrow-circle-right fa-fw w3-margin-right icon-tab"></i>
+                    </a>
+                </p>
+                <div id="tab-hamb-1" class="w3-container w3-white">
+                    <div style="margin-top: 10px;">
+                        <h4>
+                            <b>Granada</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 10,90</span>
+                        </h4>
+                        <p class="w3-text-grey">2 Hambúrgueres, Queijo, Ovo, Salsicha, Presunto, Milho, Bacon,
+                            Batata-palha e Salada.</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h4>
+                            <b>Turbinado</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 10,00</span>
+                        </h4>
+                        <p class="w3-text-grey">2 Hambúrgueres, Queijo, 2 Ovos, 2 Salsichas, Presunto e Salada.</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h4>
+                            <b>X-Tudo</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 8,50</span>
+                        </h4>
+                        <p class="w3-text-grey"> Hambúrguer, Queijo, Ovo, Salsicha, Presunto, Milho, Bacon e Salada.</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h4>
+                            <b>Bomba Atômica</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 6,50</span>
+                        </h4>
+                        <p class="w3-text-grey"> Hambúrguer, Queijo, Ovo, Salsicha, Presunto e Salada.</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h4>
+                            <b>Hamburgão</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 8,00</span>
+                        </h4>
+                        <p class="w3-text-grey"> 2 Hambúrgueres, Queijo, Ovo, Salsicha, Presunto e Salada.</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h4>
+                            <b>X-Salada</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 5,00</span>
+                        </h4>
+                        <p class="w3-text-grey"> Hambúrguer, Queijo e Salada.</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h4>
+                            <b>Tropical</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 6,00</span>
+                        </h4>
+                        <p class="w3-text-grey"> Hambúrguer, Queijo, Ovo e Salada.</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h4>
+                            <b>X-Bacon</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 6,00</span>
+                        </h4>
+                        <p class="w3-text-grey"> Hambúrguer, Queijo, Bacon.</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h4>
+                            <b>Cheddar Bacon</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 8,00</span>
+                        </h4>
+                        <p class="w3-text-grey"> Hambúrguer, Cheddar, Bacon e Salada.</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h4>
+                            <b>Cheddar Duplo</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 10,90</span>
+                        </h4>
+                        <p class="w3-text-grey"> 2 Hambúrgueres, Cheddar, Bacon e Salada.</p>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+
+            <!-- TITLE HAMBUGERE 2 -->
+            <div id="title-hamb" class="w3-container title-hamb seletor-mouse-none">
+                <p class="text-hamb border-radius title-color-2">SANDUÍCHES DE HAMBÚRGUERES ESPECIAIS
+                    <a class="font-size-16 float-right align-items-center display-none hover-icon" id="icon-2-off"
+                        onclick="hideTab('2')">
+                        Esconder <i class="fa fa-arrow-circle-down fa-fw w3-margin-right icon-tab"> </i>
+                    </a>
+                    <a class="font-size-16 float-right align-items-center display-flex hover-icon" id="icon-2-on"
+                        onclick="showTab('2')">
+                        Mostrar <i class="fa fa-arrow-circle-right fa-fw w3-margin-right icon-tab"></i>
+                    </a>
+                </p>
+                <div id="tab-hamb-2" class="w3-container w3-white display-none">
+                    <div style="margin-top: 10px;">
+                        <h4>
+                            <b>Hambúrguer de Picanha 150g</b>
+                            <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 12,50</span>
+                        </h4>
+                        <p class="w3-text-grey">Hambúrguer de picanha, Queijo, Milho, Bacon e Salada.</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h4>
+                            <b>Hambúrguer de Costela 150g</b>
+                            <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 12,50</span>
+                        </h4>
+                        <p class="w3-text-grey">Hambúrguer de Costela, Queijo Cheddar, Bacon, Batata-palha e Salada.</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h4>
+                            <b>Hambúrguer de Cordeiro 150g</b>
+                            <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 13,99</span>
+                        </h4>
+                        <p class="w3-text-grey">Hambúrguer de Cordeiro, Queijo, Cebola, Milho, Bacon e Salada.</p>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+
+            <!-- TITLE HAMBUGERE 3 -->
+            <div id="title-hamb" class="w3-container title-hamb seletor-mouse-none ">
+                <p class="text-hamb border-radius title-color-3">SANDUÍCHES DE HAMBÚRGUER DE FRANGO
+                    <a class="font-size-16 float-right align-items-center display-none hover-icon" id="icon-3-off"
+                        onclick="hideTab('3')">
+                        Esconder <i class="fa fa-arrow-circle-down fa-fw w3-margin-right icon-tab"> </i>
+                    </a>
+                    <a class="font-size-16 float-right align-items-center display-flex hover-icon" id="icon-3-on"
+                        onclick="showTab('3')">
+                        Mostrar <i class="fa fa-arrow-circle-right fa-fw w3-margin-right icon-tab"></i>
+                    </a>
+                </p>
+                <div id="tab-hamb-3" class="w3-container w3-white display-none">
+                    <div style="margin-top: 10px;">
+                        <h4>
+                            <b>Bomba de Frango</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 6,50</span>
+                        </h4>
+                        <p class="w3-text-grey">Hambúrguer, Queijo, Ovo, Salsicha, Presunto e Salada.</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h4>
+                            <b>X-Salada de Frango</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 6,00</span>
+                        </h4>
+                        <p class="w3-text-grey">Hambúrguer, Queijo e Salada.</p>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+
+            <!-- TITLE HAMBUGERE 4 -->
+            <div id="title-hamb" class="w3-container title-hamb seletor-mouse-none ">
+                <p class="text-hamb border-radius title-color-4">SANDUÍCHES DE FILÉ DE FRANGO
+                    <a class="font-size-16 float-right align-items-center display-none hover-icon" id="icon-4-off"
+                        onclick="hideTab('4')">
+                        Esconder <i class="fa fa-arrow-circle-down fa-fw w3-margin-right icon-tab"> </i>
+                    </a>
+                    <a class="font-size-16 float-right align-items-center display-flex hover-icon" id="icon-4-on"
+                        onclick="showTab('4')">
+                        Mostrar <i class="fa fa-arrow-circle-right fa-fw w3-margin-right icon-tab"></i>
+                    </a>
+                </p>
+                <div id="tab-hamb-4" class="w3-container w3-white display-none">
+                    <div style="margin-top: 10px;">
+                        <h4>
+                            <b>X-Tudo de Frango</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 11,00</span>
+                        </h4>
+                        <p class="w3-text-grey">Filé de Frango, Queijo, Ovo, Salsicha, Presunto, Milho, Bacon e Salada.
+                        </p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h4>
+                            <b>Frango Atômico</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 9,50</span>
+                        </h4>
+                        <p class="w3-text-grey">Filé de Frango, Queijo, Ovo, Salsicha, Presunto e Salada.
+                        </p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h4>
+                            <b>X-Frango Bacon</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 7,50</span>
+                        </h4>
+                        <p class="w3-text-grey">Filé de Frango, Queijo e Bacon.
+                        </p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h4>
+                            <b>X-Frango Egg</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 7,00</span>
+                        </h4>
+                        <p class="w3-text-grey">Filé de Frango, Queijo e Ovo.
+                        </p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h4>
+                            <b>X-Frango Salada</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 7,00</span>
+                        </h4>
+                        <p class="w3-text-grey">Filé de Frango, Queijo e Salada.
+                        </p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h4>
+                            <b>Super Frango</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 9,50</span>
+                        </h4>
+                        <p class="w3-text-grey">Filé de Frango, Ovo, Salsicha, Milho, Bacon e Salada.
+                        </p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h4>
+                            <b>X-Frango Milho</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 7,50</span>
+                        </h4>
+                        <p class="w3-text-grey">Filé de Frango, Queijo e Milho.
+                        </p>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- AQUI VAI MOSTRAR OS COMBOS E TRIOS -->
+    <section id="pizzValue" class="w3-container w3-padding-32"
+        style="background:#fff7dd;color:#ffa200;box-shadow: inset 1px 0px 8px rgba(0, 0, 0, 0.6);">
+        <div class="w3-content">
+            <div class="w3-row">
+                <div class="w3-col m4">
+                    <h3>Pizzas Tradicionais e Doces</h3>
+                    <p>Pizza Pequena R$ 13,99</p>
+                    <p style="font-size:2em;">Pizza Média R$ 16,99</p>
+                    <p style="font-size: 3em;white-space: nowrap;">Pizza Grande R$ 24,99</p>
+
+                    <h3>Borda recheadas Gratis</h3>
+                    <p>Catupiry, Cheaddar, Doce de leite e chocolate <br>
+                        Adicional de Recheio R$: 2,00
+                    </p>
+                </div>
+
+                <div class="w3-col m4" style="text-align: right;">
+                    <h3>Pizzas Especiais</h3>
+                    <p>Pizza Pequena R$ 14,99</p>
+                    <p>Pizza Média R$ 17,99 </p>
+                    <p>Pizza Grande R$, 25,99</p>
+                </div>
+
+                <div class="w3-col m4 pzz">
+                    <img src="img/pizza-valor.png" style="width: 80%;" />
+                    <div style="display: inline-flex;white-space: nowrap;">
+                        <p>Disk&nbsp;</p>
+                        <p>&nbsp;3399-3501</p>
+                    </div>
+                    <div style="display: inline-flex;white-space: nowrap;">
+                        <p>Pizza&nbsp;</p>
+                        <p>&nbsp;3703-5838</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br />
+
+
+    <!--    <img src="img/sobremesaspng.png" style="width:100%" />-->
+    </section>
+
+    <!--  Contato  -->
+    <section class="w3-container  w3-padding-32" id="contact" style="display:block">
+        <h2 class="w3-center ">CONTATO</h2>
+        <div class="w3-row-padding w3-content">
+            <div class="w3-col m4">
+                <div class=" w3-container">
+                    <p><i class="fa fa-map-marker fa-fw  w3-margin-right float-right icon-tab"></i><b>RIACHO FUNDO I
+                            <br>QN 05 CONJ
+                            17 LOTE 29 LOJA 01</b></p>
+
+                </div>
+
+            </div>
+            <div class="w3-col m4">
+                <div class="w3-container" style="border: 1px solid red;border-radius: 5px;text-align: center;">
+                    <p>Aceitamos Cartões Débito, Crédito e Refeição <br>Passamos Cartões em sua Residência</p>
+                    <div id="cartoes">
+                        <img src="img/cartoes/visa.jpg" />
+                        <img src="img/cartoes/mastercard.jpg" />
+                        <img src="img/cartoes/redeshop.jpg" />
+                        <img src="img/cartoes/elo.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col m4 num">
+                <div>
+                    <p>Disk&nbsp;</p>
+                    <p>&nbsp;3399-3501</p>
+                </div>
+                <div>
+                    <p>Pizza&nbsp;</p>
+                    <p>&nbsp;3703-5838</p>
+                </div>
+            </div>
+        </div>
+        <p class="w3-center">"Tudo posso naquele que me fortalece"(FI 4:3)</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-padding-32 footer">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <p style="font-size:12px;">Powered by <a href="http://josiel27.github.io/portfolio" title="Powered by Josiel"
+                target="_blank" class="w3-hover-opacity">&copy;Josiel Faria</a></p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
