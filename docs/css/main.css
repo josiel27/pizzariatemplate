@@ -32,6 +32,11 @@ h6 {
   user-select: none;
 }
 
+.box-shadow {
+  /* box-shadow: inset 1px 0px 8px  rgba(0, 0, 0, 0.6); */
+  box-shadow: inset 0 5px 5px -5px rgba(0, 0, 0, 0.6);
+}
+
 /***********{ heade }*************/
 
 .w3-badge,
@@ -219,7 +224,10 @@ p {
 #cardapio > div > h2 {
   color: yellow;
   text-shadow: 1px 1px 2px darkorange;
-  font-size: 3em;
+  font-size: 2.5em;
+}
+.trios-ajust-font > div > h2 {
+  font-size: 3em !important;
 }
 
 #cardapio > div > h2 + p {
@@ -308,6 +316,17 @@ h5.cardapio {
   font-size: 4em;
 }
 
+.ajust-margin-title-pizzas {
+  margin-top: 30px !important;
+}
+.ajust-title-pizzas {
+  font-size: 3em !important;
+}
+
+.ajust-subtitle-pizzas {
+  font-size: 2em !important;
+}
+
 #menu > div > h2 + p {
   text-align: center;
   color: darkorange;
@@ -368,6 +387,11 @@ h5.cardapio {
 }
 
 /***********{ novidades }*************/
+.padding-ajust-novidades {
+  padding-top: 80px !important;
+  padding-bottom: 0px !important;
+}
+
 #novidades {
   background-image: url("../img/background/Pizza-fundo2.jpg");
   background-position: center;
@@ -379,6 +403,30 @@ h5.cardapio {
   z-index: 1;
 }
 
+#novidadesPorcao {
+  background-image: url("../img/background/Pizza-fundo2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  /*    min-height: 100%;*/
+  position: relative;
+  z-index: 1;
+}
+
+#novidadesPorcao:after {
+  display: block;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 #novidades:after {
   display: block;
   content: "";
@@ -420,16 +468,37 @@ h5.cardapio {
   transition: all 0.2s ease 0s;
 }
 
-#novidadesPorcao > div > div:nth-of-type(1) {
+#novidadesPorcao footer {
+  height: 240px;
+  color: #ffa200 !important;
+}
+
+.border-radius-novidades {
+  padding: 5px;
+}
+.border-radius-novidades > main {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border: 1px solid;
+}
+
+.footer-novidades {
+  background: url(../img/footer.png);
+  font-size: 1.5em;
+  height: 70px;
+}
+.footer-novidades > p {
+}
+#novidadesPorcao > div > div:nth-of-type(1) > main {
   background-image: url(../img/novidades/porcao.png);
 }
-#novidadesPorcao > div > div:nth-of-type(2) {
+#novidadesPorcao > div > div:nth-of-type(2) > main {
   background-image: url(../img/novidades/sobremesa.png);
 }
-#novidadesPorcao > div > div:nth-of-type(3) {
-  background-image: url(../img/novidades/heineken.jpg);
+#novidadesPorcao > div > div:nth-of-type(3) > main {
+  background-image: url(../img/novidades/macarrao.jpg);
 }
-#novidadesPorcao > div > div:nth-of-type(4) {
+#novidadesPorcao > div > div:nth-of-type(4) > main {
   background-image: url(../img/novidades/suco.png);
 }
 #novidadesPorcao > div > div {
@@ -440,7 +509,7 @@ h5.cardapio {
   transition: all 300ms ease;
 }
 
-#novidadesPorcao > div > div:hover:nth-of-type(1),
+/* #novidadesPorcao > div > div:hover:nth-of-type(1),
 #novidadesPorcao > div > div:hover:nth-of-type(2),
 #novidadesPorcao > div > div:hover:nth-of-type(3),
 #novidadesPorcao > div > div:hover:nth-of-type(4) {
@@ -449,7 +518,7 @@ h5.cardapio {
   -o-transform: scale(1.1) rotate(4deg);
   -ms-transform: scale(1.1) rotate(4deg);
   transform: scale(1.1) rotate(4deg);
-}
+} */
 
 #novidadesPorcao main {
   height: 230px;
@@ -471,19 +540,18 @@ h5.cardapio {
   position: relative;
 }
 
-#novidadesPorcao footer {
-  background: #f1f1f1;
-  height: 175px;
-  color: #935d00 !important;
-}
-
 /***********{ footer }*************/
+
 footer.footer {
   background: url(../img/footer.png);
   color: #ffa200;
   font-size: 1.5em;
   /* height: 120px */
   height: 70px;
+}
+
+.footer-ajust-height {
+  height: 110px !important;
 }
 
 footer.footer i {
@@ -617,8 +685,12 @@ center {
   font-family: "Impact", Charcoal, sans-serif !important;
   font-size: 50px !important;
   padding: 0;
-  margin-top: 0px;
+  margin-bottom: 15px;
   color: #000;
   font-weight: bold;
   display: inline-flex;
+}
+
+.padding-top-64 {
+  padding-top: 34px !important;
 }

@@ -1,0 +1,44 @@
+.modal_style {
+    overflow: hidden !important;
+}
+
+.h4-ajust {
+  margin: 0px !important;
+}
+.p-ajust {
+  margin: 0px !important;
+}
+
+.hr-ajust {
+  margin: 5px 0 !important;
+}
+.span-ajust {
+  margin-top: 10px !important;
+}
+
+.title-color-1 {
+  background: #edb923;
+}
+.title-color-2 {
+  background: #f58220;
+}
+.title-color-3 {
+  background: #ee1d23;
+}
+.title-color-4 {
+  background: #00a54f;
+}
+
+.border-radius {
+  /* border: 3px solid; */
+  border-radius: 10px;
+}
+
+.text-hamb {
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  /* text-align: center; */
+  padding-left: 40px;
+  font-weight: bold;
+}
