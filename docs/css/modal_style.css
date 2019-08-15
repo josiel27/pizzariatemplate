@@ -1,5 +1,20 @@
 .modal_style {
-    overflow: hidden !important;
+  overflow: hidden !important;
+}
+
+.display-topright {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background: transparent;
+  font-size: 30px;
+  color: white;
+}
+
+.display-topright:hover {
+  transform: scale(1.05);
+  background: transparent !important;
+  color: white!important;
 }
 
 .h4-ajust {

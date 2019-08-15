@@ -39,6 +39,14 @@ h6 {
 
 /***********{ heade }*************/
 
+.selo-style {
+  width: 130px;
+  position: absolute;
+  right: 2vw;
+  bottom: 2vw;
+  border-radius: 200px;
+}
+
 .w3-badge,
 .w3-tag {
   background: #009a49;
@@ -642,6 +650,10 @@ footer > p {
   }
   .w3-content {
     max-width: 100% !important;
+  }
+
+  .selo-style {
+    display: none;
   }
 }
 
