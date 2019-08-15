@@ -27,7 +27,7 @@
 #hamburguer > div > h2 {
   color: yellow;
   text-shadow: 1px 1px 1px darkorange;
-  font-size: 3em;
+  font-size: calc(3vw + 3vh);
 }
 
 #hamburguer > div > h2 + p {
