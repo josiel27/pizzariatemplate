@@ -257,6 +257,20 @@ h5.cardapio {
   width: 100%;
   height: 150px;
 }
+.img-iterations-marguerita {
+  margin: 12px;
+  margin-left: 25px;
+  width: 83%;
+  height: 126px;
+}
+
+.img-iterations-hamb {
+  width: 75%;
+  height: 180px;
+  margin-left: auto;
+  margin: auto;
+  display: flex;
+}
 
 #Pizza {
 }
