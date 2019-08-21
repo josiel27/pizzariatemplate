@@ -18,6 +18,32 @@ h6 {
   display: none;
 }
 
+/* AJUSTES DA SECTION DE PROMOÇÃO DE PIZZAS */
+@media only screen and (min-width: 600px) {
+  .width-pizza {
+    min-width: 50% !important;
+    max-width: 50% !important;
+  }
+}
+
+/* AJUSTES DA SECTION DE PROMOÇÃO DE PIZZAS */
+@media only screen and (min-width: 1000px) {
+  .width-pizza {
+    min-width: 33% !important;
+    max-width: 33% !important;
+  }
+}
+
+/* AJUSTES DA SECTION DE PROMOÇÃO DE PIZZAS */
+@media only screen and (min-width: 1300px) {
+  .width-pizza {
+    min-width: 20% !important;
+    max-width: 20% !important;
+  }
+}
+
+
+
 .color-theme {
   background: #ffa200 !important;
   color: white !important;
@@ -266,13 +292,10 @@ h5.cardapio {
 
 .img-iterations-hamb {
   width: 75%;
-  height: 180px;
+  height: 140px;
   margin-left: auto;
   margin: auto;
   display: flex;
-}
-
-#Pizza {
 }
 
 #Pizza > div {
@@ -582,7 +605,7 @@ footer.footer i {
 
 footer > p {
   /* font-size: 1em; /*Original font sizer pizzas iterations */
-  font-size: 0.6em;
+  font-size: 0.5em;
 }
 
 /***********{ contato }**************/

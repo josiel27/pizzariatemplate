@@ -80,16 +80,8 @@
   }
 })();
 
-
-
-
-
-//
-// HAMBURGUERE INTERATIONS
-//
-
 (function() {
-  var x = document.getElementById("imgTrio1");
+  var x = document.getElementById("imgPizza5");
   x.addEventListener("mouseover", mouseover);
   x.addEventListener("mouseout", ouseout);
 
@@ -106,8 +98,16 @@
   }
 })();
 
+
+
+
+
+//
+// HAMBURGUERE INTERATIONS
+//
+
 (function() {
-  var x = document.getElementById("imgTrio2");
+  var x = document.getElementById("imgTrio1");
   x.addEventListener("mouseover", mouseover);
   x.addEventListener("mouseout", ouseout);
 
@@ -125,7 +125,7 @@
 })();
 
 (function() {
-  var x = document.getElementById("imgTrio3");
+  var x = document.getElementById("imgTrio2");
   x.addEventListener("mouseover", mouseover);
   x.addEventListener("mouseout", ouseout);
 
@@ -139,5 +139,41 @@
     var x = document.getElementsByClassName("w3-display-topleft");
     x[6].style.width = "50%";
     x[6].style.borderTopRightRadius = "0px";
+  }
+})();
+
+(function() {
+  var x = document.getElementById("imgTrio3");
+  x.addEventListener("mouseover", mouseover);
+  x.addEventListener("mouseout", ouseout);
+
+  function mouseover() {
+    var x = document.getElementsByClassName("w3-display-topleft");
+    x[7].style.width = "100%";
+    x[7].style.borderTopRightRadius = "2px";
+  }
+
+  function ouseout() {
+    var x = document.getElementsByClassName("w3-display-topleft");
+    x[7].style.width = "50%";
+    x[7].style.borderTopRightRadius = "0px";
+  }
+})();
+
+(function() {
+  var x = document.getElementById("imgTrio4");
+  x.addEventListener("mouseover", mouseover);
+  x.addEventListener("mouseout", ouseout);
+
+  function mouseover() {
+    var x = document.getElementsByClassName("w3-display-topleft");
+    x[8].style.width = "100%";
+    x[8].style.borderTopRightRadius = "2px";
+  }
+
+  function ouseout() {
+    var x = document.getElementsByClassName("w3-display-topleft");
+    x[8].style.width = "50%";
+    x[8].style.borderTopRightRadius = "0px";
   }
 })();
