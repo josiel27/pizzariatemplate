@@ -38,24 +38,26 @@
                 </div>
             </a>
 
-            <a href="./pizzas.html" onclick="boderGreen(event);" class="w3-bar-item w3-hide-small">
-                <div class="w3-col m2 tablinkg w3-hide-small  w3-padding-large">PIZZAS</div>
+            <a  class="w3-bar-item w3-hide-small">
+                <div onclick="myFunction()" class="w3-col m2 tablinkg w3-hide-small w3-padding-large hover-menu" style="border-bottom: 6px solid #6a773b">
+                    CARDÁPIO
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="./pizzas.html" class="hover-menu">PIZZAS</a>
+                        <a href="./hamburgueres.html" class="hover-menu">HAMBURGUERES</a>
+                        <a href="./pratos.html" class="hover-menu">PRATOS EXECUTIVOS</a>
+                    </div>
+                </div>
             </a>
-
-            <a href="./hamburgueres.html" onclick="boderGreen(event);" class="w3-bar-item w3-hide-small">
-                <div class="w3-col m2 tablinkg w3-hide-small  w3-padding-large">HAMBÚRGUERES</div>
-            </a>
-
             <a href="#novidades" onclick="boderGreen(event);" class="w3-bar-item w3-hide-small">
-                <div class="w3-col m2 tablinkg w3-hide-small  w3-padding-large">Novidades</div>
+                <div class="w3-col m2 tablinkg w3-hide-small  w3-padding-large hover-menu">Novidades</div>
             </a>
 
             <a href="#cardapio" onclick="boderGreen(event);" class="w3-bar-item w3-hide-small">
-                <div class="w3-col m2 tablinkg w3-hide-small  w3-padding-large">PROMOÇÕES</div>
+                <div class="w3-col m2 tablinkg w3-hide-small  w3-padding-large hover-menu">PROMOÇÕES</div>
             </a>
 
             <a href="#contact" onclick="boderGreen(event);" class="w3-bar-item w3-hide-small">
-                <div class="w3-col m2 tablinkg w3-hide-small  w3-padding-large">CONTATO</div>
+                <div class="w3-col m2 tablinkg w3-hide-small  w3-padding-large hover-menu">CONTATO</div>
             </a>
         </div>
     </nav>
@@ -64,6 +66,8 @@
     <nav id="navSmall" class="w3-bar-block  w3-hide w3-hide-large w3-hide-medium w3-top" onclick="hideMenu()">
         <a href="./pizzas.html" class="w3-bar-item w3-button w3-padding-large">PIZZAS</a>
         <a href="./hamburgueres.html" class="w3-bar-item w3-button w3-padding-large">HAMBÚRGUERES</a>
+        <a href="./pratos.html" class="w3-bar-item w3-button w3-padding-large">PRATOS EXECUTIVOS</a>
+        <a href="#cardapio" class="w3-bar-item w3-button w3-padding-large">PROMOÇÕES</a>
         <a href="#novidades" class="w3-bar-item w3-button w3-padding-large">NOVIDADES</a>
         <a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTATO</a>
     </nav>
@@ -134,7 +138,8 @@
                         <div class="w3-display-topleft color-theme w3-padding">
                             <p><b>R$19,99</b></p>
                         </div>
-                        <img id="imgPizza3" src="img/cardapio/new_margueria.png" alt="House" class="img-iterations-marguerita">
+                        <img id="imgPizza3" src="img/cardapio/new_margueria.png" alt="House"
+                            class="img-iterations-marguerita">
                         <footer class="w3-container footer footer-ajust-height seletor-mouse-none">
                             <h5 class="cardapio">Marguerita</h5>
                             <p>Molho, mussarela, queijo parmesão, manjericão, tomate e orégano.</p>
@@ -158,7 +163,8 @@
                         <div class="w3-display-topleft color-theme w3-padding">
                             <p><b>R$19,99</b></p>
                         </div>
-                        <img id="imgPizza5" src="img/cardapio/new_banana.png" alt="House" class="img-iterations-marguerita">
+                        <img id="imgPizza5" src="img/cardapio/new_banana.png" alt="House"
+                            class="img-iterations-marguerita">
                         <footer class="w3-container footer footer-ajust-height seletor-mouse-none">
                             <h5 class="cardapio">Banana com Canela</h5>
                             <p>Mussarela, banana e canela.</p>
@@ -207,7 +213,8 @@
                         <div class="w3-display-topleft color-theme w3-padding">
                             <p><b>R$6,00</b></p>
                         </div>
-                        <img id="imgTrio1" src="img/hamburgueres/hamburguer.png" alt="House" class="img-iterations-hamb">
+                        <img id="imgTrio1" src="img/hamburgueres/hamburguer.png" alt="House"
+                            class="img-iterations-hamb">
                         <footer class="w3-container footer footer-ajust-height seletor-mouse-none">
                             <h5 class="cardapio">Hambuúrguer</h5>
                             <p>Hambúrguer, queijo, ovo, salsicha, presunto e salada.</p>
@@ -706,7 +713,7 @@
                 <hr class="hr-ajust">
                 <div>
                     <h4 class="h4-ajust">
-                        <b>Suco Natural Laranja Jarra 1Litro   </b>
+                        <b>Suco Natural Laranja Jarra 1Litro </b>
                         <span class="w3-right w3-tag w3-dark-grey w3-round ">R$ 10,00</span>
                     </h4>
                 </div>

@@ -21,7 +21,6 @@
 
 
 <body>
-
     <!-- Navbar -->
     <nav class="w3-top" style="z-index:2">
         <div class=" w3-row">
@@ -29,31 +28,33 @@
                 onclick="showMenu()" style="position: absolute;right: 0;"><i class="fa fa-bars"></i></a>
 
 
-            <a href="index.html" onclick="boderGreen(event);" class="w3-bar-item">
-                <div class="just-height w3-col m2 tablinkg  display-flex align-items-center">
+            <a href="index.html" onclick="boderGreen(event);" class="w3-bar-item  ">
+                <div class="ajust-height w3-col m2 tablinkg w3-border-green display-flex align-items-center">
                     <img class="img-logo-nav" src="img/logoatt.png" />
-                    <!-- HOME -->
                 </div>
             </a>
 
-            <a href="./pizzas.html" onclick="boderGreen(event);" class="w3-bar-item w3-hide-small">
-                <div class="w3-col m2 tablinkg w3-hide-small w3-border-green w3-padding-large">PIZZAS</div>
+            <a class="w3-bar-item w3-hide-small">
+                <div onclick="myFunction()" class="w3-col m2 tablinkg w3-hide-small w3-padding-large hover-menu"
+                    style="border-bottom: 6px solid #6a773b">
+                    CARDÁPIO
+                    <div id="myDropdown" class="dropdown-content-pizzas">
+                        <a href="./pizzas.html" class="hover-menu">PIZZAS</a>
+                        <a href="./hamburgueres.html" class="hover-menu">HAMBURGUERES</a>
+                        <a href="./pratos.html" class="hover-menu">PRATOS EXECUTIVOS</a>
+                    </div>
+                </div>
             </a>
-
-            <a href="./hamburgueres.html" onclick="boderGreen(event);" class="w3-bar-item w3-hide-small">
-                <div class="w3-col m2 tablinkg w3-hide-small  w3-padding-large">HAMBÚRGUERES</div>
-            </a>
-
             <a href="index.html#novidades" onclick="boderGreen(event);" class="w3-bar-item w3-hide-small">
-                <div class="w3-col m2 tablinkg w3-hide-small  w3-padding-large">Novidades</div>
+                <div class="w3-col m2 tablinkg w3-hide-small  w3-padding-large hover-menu">Novidades</div>
             </a>
 
             <a href="index.html#cardapio" onclick="boderGreen(event);" class="w3-bar-item w3-hide-small">
-                <div class="w3-col m2 tablinkg w3-hide-small  w3-padding-large">PROMOÇÕES</div>
+                <div class="w3-col m2 tablinkg w3-hide-small  w3-padding-large hover-menu">PROMOÇÕES</div>
             </a>
 
             <a href="#contact" onclick="boderGreen(event);" class="w3-bar-item w3-hide-small">
-                <div class="w3-col m2 tablinkg w3-hide-small  w3-padding-large">CONTATO</div>
+                <div class="w3-col m2 tablinkg w3-hide-small  w3-padding-large hover-menu">CONTATO</div>
             </a>
         </div>
     </nav>
@@ -62,10 +63,11 @@
     <nav id="navSmall" class="w3-bar-block  w3-hide w3-hide-large w3-hide-medium w3-top" onclick="hideMenu()">
         <a href="./pizzas.html" class="w3-bar-item w3-button w3-padding-large">PIZZAS</a>
         <a href="./hamburgueres.html" class="w3-bar-item w3-button w3-padding-large">HAMBÚRGUERES</a>
-        <a href="./index.html#novidades" class="w3-bar-item w3-button w3-padding-large">NOVIDADES</a>
+        <a href="./pratos.html" class="w3-bar-item w3-button w3-padding-large">PRATOS EXECUTIVOS</a>
+        <a href="index.html#cardapio" class="w3-bar-item w3-button w3-padding-large">PROMOÇÕES</a>
+        <a href="index.html#novidades" class="w3-bar-item w3-button w3-padding-large">NOVIDADES</a>
         <a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTATO</a>
     </nav>
-
 
     <!--  PIZZAS  -->
     <section class="w3-container w3-padding-32 seletor-mouse-none ajust-margin-title-pizzas" id="menu">
@@ -476,19 +478,11 @@
         style="background:#fff7dd;color:#ffa200;box-shadow: inset 1px 0px 8px rgba(0, 0, 0, 0.6);">
         <div class="w3-content">
             <div class="w3-row">
-                <div class="w3-col m4">
+                <div class="w3-col m8">
                     <h3>Pizzas Tradicionais e Doces</h3>
                     <p>Pizza Pequena R$ 13,99</p>
                     <p style="font-size:2em;">Pizza Média R$ 16,99</p>
                     <p style="font-size: 3em;white-space: nowrap;">Pizza Grande R$ 24,99</p>
-
-                    <h3>Borda recheadas Gratis</h3>
-                    <p>Catupiry, Cheaddar, Doce de leite e chocolate <br>
-                        Adicional de Recheio R$: 2,00
-                    </p>
-                </div>
-
-                <div class="w3-col m4" style="text-align: right;">
                     <h3>Pizzas Especiais</h3>
                     <p>Pizza Pequena R$ 14,99</p>
                     <p>Pizza Média R$ 17,99 </p>
@@ -510,14 +504,9 @@
         </div>
     </section>
 
-    <br />
-
-
-    <!--    <img src="img/sobremesaspng.png" style="width:100%" />-->
-    </section>
 
     <!-- Contato -->
-    <section class="w3-container  w3-padding-32 box-shadow" id="contact" style="display:block">
+    <section class="w3-container  w3-padding-32 " id="contact" style="display:block">
         <div class="w3-content contato-title">
             <p class="w3-center">CONTATO</p>
         </div>

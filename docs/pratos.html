@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<title>Anattela Pizzaria</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="shortcut icon" href="img/favicon.png" />
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+<link rel="stylesheet" href="css/font_face.css" />
+<link rel="stylesheet" href="css/font-awesome.css" />
+<link rel="stylesheet" href="css/main.css" />
+<link rel="stylesheet" href="css/w3.css" />
+<link rel="stylesheet" href="css/css_hamburgueres.css" />
+
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="w3-top" style="z-index:2">
+        <div class=" w3-row">
+            <a class="w3-bar-item w3-button  w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)"
+                onclick="showMenu()" style="position: absolute;right: 0;"><i class="fa fa-bars"></i></a>
+
+
+            <a href="index.html" onclick="boderGreen(event);" class="w3-bar-item  ">
+                <div class="ajust-height w3-col m2 tablinkg w3-border-green display-flex align-items-center">
+                    <img class="img-logo-nav" src="img/logoatt.png" />
+                </div>
+            </a>
+
+            <a class="w3-bar-item w3-hide-small">
+                <div onclick="myFunction()" class="w3-col m2 tablinkg w3-hide-small w3-padding-large hover-menu"
+                    style="border-bottom: 6px solid #6a773b">
+                    CARDÁPIO
+                    <div id="myDropdown" class="dropdown-content-pizzas">
+                        <a href="./pizzas.html" class="hover-menu">PIZZAS</a>
+                        <a href="./hamburgueres.html" class="hover-menu">HAMBURGUERES</a>
+                        <a href="./pratos.html" class="hover-menu">PRATOS EXECUTIVOS</a>
+                    </div>
+                </div>
+            </a>
+            <a href="index.html#novidades" onclick="boderGreen(event);" class="w3-bar-item w3-hide-small">
+                <div class="w3-col m2 tablinkg w3-hide-small  w3-padding-large hover-menu">Novidades</div>
+            </a>
+
+            <a href="index.html#cardapio" onclick="boderGreen(event);" class="w3-bar-item w3-hide-small">
+                <div class="w3-col m2 tablinkg w3-hide-small  w3-padding-large hover-menu">PROMOÇÕES</div>
+            </a>
+
+            <a href="#contact" onclick="boderGreen(event);" class="w3-bar-item w3-hide-small">
+                <div class="w3-col m2 tablinkg w3-hide-small  w3-padding-large hover-menu">CONTATO</div>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Navbar on small screens -->
+    <nav id="navSmall" class="w3-bar-block  w3-hide w3-hide-large w3-hide-medium w3-top" onclick="hideMenu()">
+        <a href="./pizzas.html" class="w3-bar-item w3-button w3-padding-large">PIZZAS</a>
+        <a href="./hamburgueres.html" class="w3-bar-item w3-button w3-padding-large">HAMBÚRGUERES</a>
+        <a href="./pratos.html" class="w3-bar-item w3-button w3-padding-large">PRATOS EXECUTIVOS</a>
+        <a href="index.html#cardapio" class="w3-bar-item w3-button w3-padding-large">PROMOÇÕES</a>
+        <a href="index.html#novidades" class="w3-bar-item w3-button w3-padding-large">NOVIDADES</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTATO</a>
+    </nav>
+
+    <!--  SECTION INICIO  -->
+    <section class="" id="inicio"></section>
+
+    <!--  HAMBUGERES  -->
+    <section class="w3-container w3-padding-32" id="hamburguer">
+        <div class="w3-content">
+            <h2 class="w3-center title-hamb-princ">PRATOS EXECUTIVOS</h2>
+            <p>Experimente nossos deliciosos pratos!</p>
+            <!-- TITLE HAMBUGERE 1 -->
+            <div id="title-hamb" class="w3-container title-hamb seletor-mouse-none ">
+                <p class="text-hamb border-radius title-color-1"> </p>
+                <div id="tab-hamb-1" class="w3-container w3-white">
+                    <div style="margin-top: 10px;">
+                        <h4>
+                            <b>Picanha</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 19,99</span>
+                        </h4>
+                        <p class="w3-text-grey">Acompanha arroz, feijão, farofa, batata frita e vinagrete.</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h4>
+                            <b>Filé de Frango</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 14,99</span>
+                        </h4>
+                        <p class="w3-text-grey">Acompanha arroz, feijão tropeiro, batata frita e vinagrete.</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h4>
+                            <b>Contra Filé</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 15,99</span>
+                        </h4>
+                        <p class="w3-text-grey">Acompanha arroz, feijão tropeiro, batata frita e vinagrete.</p>
+                    </div>
+                    <div>
+                        <h4>
+                            <b>Linguiça de Frango ou Toscana</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$
+                                09,99</span>
+                        </h4>
+                        <p class="w3-text-grey">Acompanha 2 linguiças, arroz, feijão, farofa e salada. </p>
+                    </div>
+                    <div>
+                        <h4>
+                            <b>Picadinho de Carne</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$
+                                13,99</span>
+                        </h4>
+                        <p class="w3-text-grey"> Acompanha arroz, feijão, farofa de carne seca, batata frita e
+                            vinagrete.</p>
+                    </div>
+                    <div>
+                        <h4>
+                            <b>Picadinho de Frango</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$
+                                13,99</span>
+                        </h4>
+                        <p class="w3-text-grey">Acompanha arroz à grega, purê de batata, batata frita e salada.</p>
+                    </div>
+                    <div>
+                        <h4>
+                            <b>Carne de Sol</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 15,99</span>
+                        </h4>
+                        <p class="w3-text-grey">Acompanha arroz, feijão tropeiro, mandioca e salada.</p>
+                    </div>
+                    <div>
+                        <h4>
+                            <b>Bisteca Suína</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 14,99</span>
+                        </h4>
+                        <p class="w3-text-grey">Acompanha arroz, feijão tropeiro, purê de batata e vinagrete.</p>
+                    </div>
+                    <div>
+                        <h4>
+                            <b>Costelinha Suína</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 13,99</span>
+                        </h4>
+                        <p class="w3-text-grey">Acompanha arroz à grega, purê de batata, farofa de carne seca e salada.
+                        </p>
+                    </div>
+                    <div>
+                        <h4>
+                            <b>Carne de Panela</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 10,99</span>
+                        </h4>
+                        <p class="w3-text-grey">Acompanha arroz, feijão, mandioca cozida e salada.</p>
+                    </div>
+                    <div>
+                        <h4>
+                            <b>Bife à Cavalo</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 12,99</span>
+                        </h4>
+                        <p class="w3-text-grey">Acompanha arroz, feijão, mandioca cozida e salada.</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h4>
+                            <b>Filé de Peixe</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 15,99</span>
+                        </h4>
+                        <p class="w3-text-grey">Acompanha filé de tilápia, arroz, purê de batata e salada.</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h4>
+                            <b>Parmegiana de Frango</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$
+                                13,99</span>
+                        </h4>
+                        <p class="w3-text-grey"> Acompanha arroz à grega, purê de batata e fritas.</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h4>
+                            <b>Parmegiana de Carne</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$
+                                14,99</span>
+                        </h4>
+                        <p class="w3-text-grey">Acompanha arroz à grega, purê de batata e fritas.</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h4>
+                            <b>Estrogonofe de Frango</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$
+                                    13,99</span>
+                        </h4>
+                        <p class="w3-text-grey">Acompanha arroz à grega e batata palha.</p>
+                    </div>
+                    <hr>
+                    <hr>
+                    <div>
+                        <p class="w3-text-grey">Acréscimo no prato R$ 2,99: Farofa Normal, Ovo Frito, Vinagrete, Batata
+                            Palha, Purê de Batata ou Saladinha
+                            - Consultar Atendente
+                        </p>
+                    </div>
+                    <hr>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--  Contato  -->
+    <section class="w3-container  w3-padding-32 box-shadow" id="contact" style="display:block">
+        <div class="w3-content contato-title">
+            <p class="w3-center">CONTATO</p>
+        </div>
+        <div class="w3-row-padding w3-content">
+            <div class="w3-col m5">
+                <div class=" w3-container">
+                    <div style="height: 350px;">
+                        <img src="img/contatos/mapa.png" class="map-contatos" />
+                        <p style="    font-family: inherit !important;">
+                            <b>RIACHO FUNDO I - QN 05 CONJ 17 LOTE 29 LOJA 01
+                            </b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col m3">
+                <div class="w3-container" style="border: 1px solid red;border-radius: 5px;text-align: center;">
+                    <p>Aceitamos Cartões Débito, Crédito e Refeição <br>Passamos Cartões em sua Residência</p>
+                    <div id="cartoes">
+                        <img alt="Visa Card" src="img/contatos/cartoes/visa.jpg" />
+                        <img alt="Mastercard" src="img/contatos/cartoes/mastercard.jpg" />
+                        <img alt="Hipercard" src="img/contatos/cartoes/hipercard.png" style="width: 60px" />
+                        <img alt="Elo Card" src="img/contatos/cartoes/elo.jpg" />
+                        <img alt="America Express" src="img/contatos/cartoes/america_express.png" style="width: 60px" />
+                        <img alt="Alelo Refeição" src="img/contatos/cartoes/alelo.png" style="width: 60px" />
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col m4 num">
+                <div>
+                    <p>Disk&nbsp;</p>
+                    <p>&nbsp;3399-3501</p>
+                </div>
+                <div>
+                    <p>Pizza&nbsp;</p>
+                    <p>&nbsp;3703-5838</p>
+                </div>
+                <img src="img/contatos/motoboy.png" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-padding-32 footer">
+        <p style="font-size:12px;     margin-top: 0px;">
+            Powered by
+            <a href="http://josiel27.github.io/portfolio" title="Powered by Josiel" target="_blank"
+                class="w3-hover-opacity">
+                &copy;Josiel Faria
+            </a>
+        </p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/iteration-hamburgueres.js"></script>
+</body>
+
+</html>

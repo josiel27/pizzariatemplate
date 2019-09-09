@@ -1,0 +1,64 @@
+Executivo 01 - R$ 19,99
+    PICANHA
+    Acompanha arroz, feijão, farofa, batata frita e vinagrete.
+
+Executivo 02 - R$ 14,99
+    Filé de Frango
+    Acompanha arroz, feijão tropeiro, batata frita e vinagrete.
+
+Executivo 03 - R$ 15,99
+    Contra Filé
+    Acompanha arroz, feijão tropeiro, batata frita e vinagrete.
+
+Executivo 04 - R$ 9,99
+    Linguiça de Frango ou Toscana
+    Acompanha 2 linguiças, arroz, feijão, farofa e salada.
+
+Executivo 05 - R$ 13,99
+    Picadinho de Carne
+    Acompanha arroz, feijão, farofa de carne seca, batata frita e vinagrete.
+
+Executivo 06 - R$ 13,99
+    Picadinho de Frango
+    Acompanha arroz à grega, purê de batata, batata frita e salada.
+
+Executivo 07 - R$ 15,99
+    Carne de Sol
+    Acompanha arroz, feijão tropeiro, mandioca e salada.
+
+Executivo 08 - R$ 14,99
+    Bisteca Suína
+    Acompanha arroz, feijão tropeiro, purê de batata e vinagrete.
+
+Executivo 09 - R$ 13,99
+   Costelinha Suína
+    Acompanha arroz à grega, purê de batata, farofa de carne seca e salada.
+
+Executivo 10 - R$ 10,99
+    Carne de Panela
+    Acompanha arroz, feijão, mandioca cozida e salada.
+
+Executivo 11 - R$ 12,99
+    Bife à Cavalo
+    Acompanha arroz, feijão, mandioca cozida e salada.
+
+Executivo 12 - R$ 15,99
+    Filé de Peixe
+    Acompanha filé de tilápia, arroz, purê de batata e salada.
+
+Executivo 13 - R$ 13,99
+    Parmegiana de Frango
+    Acompanha arroz à grega, purê de batata e fritas.
+
+Executivo 14 - R$ 14,99
+    Parmegiana de Carne
+    Acompanha arroz à grega, purê de batata e fritas.
+
+    
+Executivo 15 - R$ 13,99
+    Estrogonofe de Frango
+    Acompanha arroz à grega e batata palha.
+
+
+Acréscimo no prato R$ 2,99: Farofa Normal, Ovo Frito, Vinagrete, Batata Palha, Purê de Batata ou Saladinha 
+- Consultar Atendente
